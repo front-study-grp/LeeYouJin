@@ -1,0 +1,139 @@
+* {margin:0px; padding:0px;}
+body {background-color:#f4f4f4;}
+.card {background-color: #fff;}
+ul {list-style: none;}
+
+.wrap{
+    width:1024px;
+    margin:0 auto;
+} 
+/*search*/
+.search{
+    input{width:80%;margin:20px 10px;}
+    
+}
+/*search*/
+
+/* menuLists */
+.menuLists {
+    ul{
+        list-style: none;
+        overflow:hidden;
+        li{
+            float: left;
+            width:6.6%;
+            padding:5px 0;
+        }
+    }
+}
+
+/* ad */
+.ad{
+    margin-top:10px;
+    height:70px;
+    img{width:100%;height:100%;}
+}
+/* ad */
+
+
+/* content */
+.content{
+    overflow:hidden;
+    margin-top:5px;
+    .aSide{
+        float:left;
+        width:50%;
+        border-left:1px solid #eaeaea;
+        z-index: 10;
+        .newLists{
+            ul{
+                li{
+                    padding:6px 0;
+                    border-bottom:1px solid #eaeaea;
+                }
+            }
+        }
+        .newImages{
+            ul{
+                overflow: hidden;
+                li{
+                    float:left;
+                    width:50%;
+                    dl{
+                        dt{
+                            margin:5px;
+                            
+                            img{
+                                width:100%;height:100%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .weather{
+            ul{
+                overflow: hidden;
+                li{
+                    width:50%;float:left;height:70px;overflow:hidden;
+                    .mainImg{
+                        float:left;
+                        width:50px;
+                        height:100%;
+                        img{
+                            width:100%; height:100%;
+                        }
+                    }
+                    .subRegion{
+                        height:50%;
+                    }
+                    .subDegree{
+                        height:50%;
+                    }
+                }
+            }
+        }
+        
+    }
+
+
+    .bSide{
+        overflow: hidden;
+        .shop{
+            padding:10px 0;
+        }
+        .showMenu{
+            border-top:1px solid #eaeaea;
+            border-bottom:1px solid #eaeaea;
+            ul{
+                overflow:hidden;
+                li {
+                    float:left;
+                    width:33.3%;
+                    padding:5px 0;
+                }
+            }
+           
+        }
+        .showImages{
+            ul{
+                overflow: hidden;
+                li{
+                    width:40%;
+                    margin-left:5%;
+                    height:320px;
+                    
+                    float:left;
+                    figure{
+                        img{
+                            width:100%; height:235px; border:1px solid #eaeaea;
+                        }
+                        figcaption{
+                            height:50px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
