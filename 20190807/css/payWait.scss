@@ -1,0 +1,52 @@
+*{margin:0; padding: 0;font-family: NanumBarunGothic;font-weight: normal;font-style: normal;font-stretch: normal;line-height: normal;letter-spacing: normal;}
+[data-blind] { position: absolute;font-size: 0;line-height: 0;width: 0;height: 0;opacity: 0;visibility: hidden; }
+
+[data-wrap]{width: 380px; margin:20px auto; padding:32px 20px;border-radius: 6px;border: solid 1px #e3e3e3; box-sizing: border-box;
+    [data-content]{border-bottom: solid 1px #e3e3e3; width:340px;
+        [data-head-line] {font-size: 20px;letter-spacing: normal;color: var(--black);}
+        [data-subhead-line]{font-size: 16px;line-height: 1.38;color: var(--black);}
+    }
+
+    [data-content="beforePayment"]{ padding-bottom:25px;
+        [data-reserve-no] {font-size: 14px;line-height: 1.43;color: #666666;margin-top:6px;}
+        [data-check-wrap]{  margin-top:26px;
+            [data-check]{ overflow: hidden;
+                [data-check-title]{font-size: 14px;color: #666666;float:left;}
+                [data-check-date]{ font-size: 16px;color: var(--black);float:right;}
+            }
+        
+        }
+    }
+
+    [data-content="pensionInfo"]{padding:24px 0;
+        [data-head-line]{font-size: 18px;color: var(--black);}
+        [data-subhead-line]{font-size: 16px;line-height: 1.38;letter-spacing: normal;color: var(--black);margin-top:16px;}
+        [data-room]{font-size: 12px;line-height: 1.33;color: #666666;margin-top:8px;}
+        [data-map]{widows: 100%; margin-top:24px;
+            [data-map-img]{width:100%;border-radius:6px;}
+        }
+        [data-addr]{overflow: hidden; margin-top:24px;
+            &:before{width:20px; height:20px; display:inline-block;float:left; content:'';background:  url('../img/pointer.jpg') no-repeat 0 0; position: relative; left: 0px;}
+            [data-addr-info]{float:left;font-size: 14px;line-height: 1.43;color: #666666;}
+            [data-addr-copy]{float: right;font-size: 14px;line-height: 1.43;text-align: right;color: #2373df;border:0;}
+        }
+    }
+    
+
+    [data-content="priceInfo"]{padding:25px 0;
+      [data-price]{ overflow: hidden; 
+          [data-price-name]{font-size: 14px;color: #666666;}
+          [data-price-info]{font-size: 16px;float: right;color: var(--black);}
+      }  
+      [data-price="discountPrice"]{margin-top:14px;}
+
+    }
+    [data-result]{font-size: 20px;font-weight: bold; color:#333;padding:24px 0 0;
+        [data-result-price] {float:right;}
+    }
+    
+        
+    
+
+    
+}

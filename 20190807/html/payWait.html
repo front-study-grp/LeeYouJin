@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/payWait.css">
+    <script src="https://kit.fontawesome.com/b3586d4ea1.js"></script>
+</head>
+<body>
+    <div data-wrap>
+        <div data-content="beforePayment">
+            <h1 data-blind>예약내역 입금대기</h1>
+            <h2 data-head-line>입금대기</h1>
+            <p data-reserve-no>예약번호 : Y123456</p>
+            <div data-check-wrap>
+                <p data-check="in">
+                    <span data-check-title>체크인</span>
+                    <span data-check-date>2019.01.01(목) 11:00이전</span>
+                </p>
+                <p data-check="out">
+                    <span data-check-title>체크아웃</span>
+                    <span data-check-date>2019.01.02(금) 11:00이전</span>
+                </p>
+            </div>
+        </div>
+
+        <div data-content="pensionInfo">
+            <h2 data-head-line>홍천 휘게리 하우스 펜션</h2>
+            <h3 data-subhead-line>클래식2(독채,복층,월풀,커플)</h3>
+            <div data-room>
+                <p data-room-person>기준 6명 | 최대 8명</p>
+                <p data-room-info>거실 + 방,독채형 | 25평(83m)</p>
+            </div>
+            <div data-map>
+                <img data-map-img src="../img/map.jpg" alt="map">
+            </div>
+            <div data-addr>
+                <div data-addr-info>
+                    <p data-addr-new>경기 가평군 청평면 호반로 976</p>
+                    <p data-addr-old>(지번)경기 가평군 청첨면 고성리 761-5</p>
+                </div>
+                <button data-addr-copy>주소복사</button>
+            </div>
+        </div>
+
+        <div data-content="priceInfo">
+            <div data-price="roomPrice">
+                <span data-price-name>객실금액</span>
+                <span data-price-info>+112,000원</span>
+            </div>
+            <div data-price="discountPrice">
+                <span data-price-name>기업할인(20%)</span>
+                <span data-price-info>-122,000원</span>
+            </div>
+        </div>
+
+        <div data-result>
+            <span data-result-name>총 결제 금액</span>
+            <span data-result-price>244,000원</span>
+        </div>
+    </div>
+</body>
+</html>
