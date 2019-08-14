@@ -1,0 +1,309 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0; }
+
+/* 공통속성 */
+body {
+  width: 100%; }
+
+[data-wrap] {
+  width: 100%;
+  background-color: #eff2f8; }
+
+[data-card] {
+  background-color: #fff;
+  margin-top: 10px; }
+
+[data-subject] {
+  position: absolute;
+  font-size: 0;
+  line-height: 0;
+  width: 0;
+  height: 0;
+  opacity: 0;
+  visibility: hidden; }
+
+[data-font-bold] {
+  font-weight: bold; }
+
+[data-font-green] {
+  color: #00b336; }
+
+[data-font-blue] {
+  color: #34A0F3; }
+
+ul {
+  list-style: none; }
+
+[data-title="noContents"] {
+  padding: 18px 0;
+  width: 90%; }
+  [data-title="noContents"] [data-title-name], [data-title="noContents"] [data-title-btn] {
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: -.7px;
+    line-height: 20px;
+    color: #363b41; }
+  [data-title="noContents"] [data-title-btn] {
+    float: right; }
+
+[data-title="viewContents"] {
+  padding: 19px 0 17px;
+  width: 90%;
+  padding-left: 5%; }
+  [data-title="viewContents"] [data-title-name], [data-title="viewContents"] [data-title-btn] {
+    color: #363b41;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: -.5px; }
+
+/* 공통속성 */
+/* header */
+[data-card="header"] [data-header] {
+  padding-bottom: 25px; }
+  [data-card="header"] [data-header] [data-header-menu-icon] {
+    width: 15%;
+    text-align: center;
+    font-size: 23px;
+    padding: 15px 0;
+    color: #52585F; }
+  [data-card="header"] [data-header] [data-logo] {
+    width: 100%;
+    text-align: center; }
+    [data-card="header"] [data-header] [data-logo] [data-logo-img] {
+      width: 40%; }
+
+[data-card="header"] [data-search] {
+  display: flex;
+  justify-content: center; }
+  [data-card="header"] [data-search] [data-search-area] {
+    border: 1px solid #42DE91;
+    width: 90%;
+    height: 56px;
+    font-size: 17px;
+    color: #D9E0E6;
+    padding-left: 10px; }
+
+[data-card="header"] [data-menu-list] {
+  display: flex;
+  justify-content: center;
+  padding-top: 18px; }
+  [data-card="header"] [data-menu-list] [data-munu-ul] {
+    width: 90%;
+    overflow: hidden; }
+    [data-card="header"] [data-menu-list] [data-munu-ul] [data-munu-li] {
+      width: 25%;
+      float: left;
+      text-align: center; }
+      [data-card="header"] [data-menu-list] [data-munu-ul] [data-munu-li] [data-menu-block] {
+        padding: 10px; }
+        [data-card="header"] [data-menu-list] [data-munu-ul] [data-munu-li] [data-menu-block] [data-menu-block-img] {
+          padding: 15px;
+          background-color: #F0F5FA;
+          border-radius: 15px; }
+        [data-card="header"] [data-menu-list] [data-munu-ul] [data-munu-li] [data-menu-block] [data-menu-block-name] {
+          font-size: 12px;
+          font-weight: 300;
+          line-height: 14px;
+          padding-top: 5px;
+          letter-spacing: -.7px;
+          color: #676c6f; }
+
+[data-card="header"] [data-ad] {
+  width: 100%;
+  padding-top: 50px; }
+  [data-card="header"] [data-ad] [data-ad-img] {
+    width: 100%;
+    background: linear-gradient(to bottom, #fff, #eff2f8); }
+
+[data-card="header"] [data-weather] [data-weather-ul="main"] {
+  width: 90%;
+  overflow: hidden;
+  margin-left: 5%;
+  border-bottom: 1px solid #EDEFF3; }
+  [data-card="header"] [data-weather] [data-weather-ul="main"] [data-weather-li="today"] {
+    width: 54%;
+    float: left; }
+    [data-card="header"] [data-weather] [data-weather-ul="main"] [data-weather-li="today"] [data-weather-degree] {
+      vertical-align: top;
+      font-weight: 500;
+      font-size: 15px;
+      line-height: 21px;
+      color: #43484b; }
+    [data-card="header"] [data-weather] [data-weather-ul="main"] [data-weather-li="today"]:before {
+      width: 30px;
+      height: 30px;
+      display: block;
+      content: '';
+      background: url("./img/sunny_icon.png") no-repeat 0 0;
+      position: absolute;
+      left: 0px; }
+  [data-card="header"] [data-weather] [data-weather-ul="main"] [data-weather-li="mise"] {
+    width: 23%;
+    float: left;
+    text-align: center; }
+    [data-card="header"] [data-weather] [data-weather-ul="main"] [data-weather-li="mise"] [data-weather-info] {
+      border-left: 1px solid #EDEFF3; }
+    [data-card="header"] [data-weather] [data-weather-ul="main"] [data-weather-li="mise"] [data-weather-region] {
+      color: #34A0F3;
+      margin-top: 3px;
+      font-size: 14px;
+      line-height: 17px;
+      letter-spacing: -.5px; }
+  [data-card="header"] [data-weather] [data-weather-ul="main"] [data-weather-img] {
+    float: left; }
+  [data-card="header"] [data-weather] [data-weather-ul="main"] [data-weather-info] {
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 16px;
+    letter-spacing: -.8px;
+    color: #797b84;
+    margin: 22px 0; }
+
+[data-card="header"] [data-weather] [data-weather-ul="extra"] {
+  width: 90%;
+  overflow: hidden;
+  margin-left: 5%; }
+  [data-card="header"] [data-weather] [data-weather-ul="extra"] [data-weather-li] {
+    margin: 16px 0 24px; }
+  [data-card="header"] [data-weather] [data-weather-ul="extra"] [data-weather-li="mylocation"] {
+    float: left;
+    font-weight: 300;
+    line-height: 17px;
+    letter-spacing: -.5px;
+    color: #686b73;
+    font-size: 14px; }
+    [data-card="header"] [data-weather] [data-weather-ul="extra"] [data-weather-li="mylocation"] [data-location-icon] {
+      margin-left: 4px; }
+  [data-card="header"] [data-weather] [data-weather-ul="extra"] [data-weather-li="weathersite"] {
+    float: right;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 18px;
+    letter-spacing: -1px;
+    color: #9a9ea1;
+    text-align: right;
+    padding-right: 10px; }
+  [data-card="header"] [data-weather] [data-weather-ul="extra"] [data-weather-li="moreview"] {
+    float: right;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 18px;
+    letter-spacing: -.7px;
+    color: #797b84;
+    border-left: 1px solid #EDEFF3;
+    padding-left: 10px; }
+
+/* header */
+/* appDownload */
+[data-card="appDownload"] {
+  padding: 18px 20px;
+  overflow: hidden; }
+  [data-card="appDownload"] [data-appDownload-comment] {
+    width: 70%;
+    float: left;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: -.3px;
+    color: #363b41;
+    display: flex;
+    align-items: center; }
+    [data-card="appDownload"] [data-appDownload-comment]:before {
+      width: 36px;
+      height: 36px;
+      display: block;
+      content: '';
+      background: url("./img/naver_icon.png") no-repeat 0 0;
+      position: relative;
+      left: 0px;
+      float: left;
+      margin-right: 7px; }
+  [data-card="appDownload"] [data-appDownload-btn] {
+    margin-left: 20px;
+    float: right;
+    padding: 0 9px;
+    color: #4e99e0;
+    font-size: 13px;
+    line-height: 30px;
+    letter-spacing: -.8px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    border: 1px solid #4e99e0;
+    background: #fff; }
+
+[data-card="login"] {
+  padding: 14px; }
+  [data-card="login"] [data-login-btn] {
+    padding: 14px;
+    margin: 20px;
+    border: 1px solid #e6e8ef;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    background-color: #f9fafc;
+    -webkit-box-shadow: 0 3px 5px 0 rgba(121, 129, 158, 0.07);
+    box-shadow: 0 3px 5px 0 rgba(121, 129, 158, 0.07); }
+    [data-card="login"] [data-login-btn]:before {
+      width: 30px;
+      height: 30px;
+      display: block;
+      content: '';
+      background: url("./img/login_user.png") no-repeat 0 0;
+      position: absolute;
+      left: 0px; }
+    [data-card="login"] [data-login-btn]:after {
+      width: 30px;
+      height: 30px;
+      display: block;
+      content: '';
+      background: url("./img/right_arrow.png") no-repeat 0 0;
+      position: absolute;
+      right: 0px; }
+  [data-card="login"] [data-login-text] {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 30px;
+    color: #363b41;
+    letter-spacing: -.5px; }
+
+/* appDownload */
+/* webtoon */
+[data-card="webtoon"] {
+  display: flex;
+  justify-content: center; }
+
+/* webtoon */
+/* togetherStory */
+[data-together-ul], [data-openculture-ul] {
+  overflow: hidden;
+  width: 100%;
+  margin-left: 5%;
+  width: 90%; }
+  [data-together-ul] [data-together-li], [data-together-ul] [data-openculture-li], [data-openculture-ul] [data-together-li], [data-openculture-ul] [data-openculture-li] {
+    width: 50%;
+    float: left; }
+    [data-together-ul] [data-together-li] [data-together-img], [data-together-ul] [data-together-li] [data-openculture-img], [data-together-ul] [data-openculture-li] [data-together-img], [data-together-ul] [data-openculture-li] [data-openculture-img], [data-openculture-ul] [data-together-li] [data-together-img], [data-openculture-ul] [data-together-li] [data-openculture-img], [data-openculture-ul] [data-openculture-li] [data-together-img], [data-openculture-ul] [data-openculture-li] [data-openculture-img] {
+      width: 95%;
+      height: 100%;
+      border-radius: 4px;
+      margin: 0 10px 20px 0; }
+    [data-together-ul] [data-together-li] [data-together-img="img2"], [data-together-ul] [data-openculture-li] [data-together-img="img2"], [data-openculture-ul] [data-together-li] [data-together-img="img2"], [data-openculture-ul] [data-openculture-li] [data-together-img="img2"] {
+      float: right; }
+
+/* togetherStory */
+/* openCulture */
+[data-openculture-ul] {
+  overflow: hidden; }
+  [data-openculture-ul] [data-openculture-li] {
+    width: 50%;
+    float: left; }
+
+/* openCulture */
+/* pan */
+[data-card="pan"] [data-pan-ul] {
+  width: 90%; }
+  [data-card="pan"] [data-pan-ul] [data-pan-li] {
+    float: left;
+    width: 50%; }
