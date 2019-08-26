@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/templete_re.css">
+</head>
+<body>
+    <div class="wrap">
+        <div id="bigImageDiv" class="bigImageDiv">
+            <img src="./img/img1.jpg" alt="" class="bigImage">
+        </div>
+        <div class="imgLists">
+            <ul class="imgListsUl" id="pics">
+                <li class="imgListsLi"><button type="button"><img src="./img/img1.jpg" alt=""></button></li>
+                <li class="imgListsLi"><button type="button"><img src="./img/img2.jpg" alt=""></button></li>
+                <li class="imgListsLi"><button type="button"><img src="./img/img3.jpg" alt=""></button></li>
+                <li class="imgListsLi"><button type="button"><img src="./img/img4.jpg" alt=""></button></li>
+                <li class="imgListsLi"><button type="button"><img src="./img/img5.jpg" alt=""></button></li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        const buttonArr = document.getElementById("pics").getElementsByTagName("button");
+        for (let value of buttonArr) {
+            value.addEventListener('click', _=>{
+                let imgSrc = value.firstElementChild.getAttribute('src');
+                 document.getElementById("bigImageDiv").firstElementChild.setAttribute('src',imgSrc);
+                }
+            );
+        }
+    </script>
+</body>
+</html>
